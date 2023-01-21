@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import '../css/KochoComp.css'
 import { AiFillLike } from 'react-icons/ai'
 import one from '../assets/one.png'
-import d from '../assets/1.jpg'
+import d from '../assets/11.jpeg'
 import d1 from '../assets/2.jpg'
 function KochoComp(props) {
     const [likeCount, setLikeCount] = useState(0)
@@ -15,7 +15,7 @@ function KochoComp(props) {
                 <Card bsPrefix className='cards'>
 
                     <NavLink exact to={`/DetailProjectComp/${props.id}`} bsPrefix className="navlink">
-                        <Card.Img variant="top" src={d} className="img w-100" bsPrefix />
+                        <Card.Img variant="top" src={d1} className="img w-100" bsPrefix />
                     </NavLink>
 
                     <Card.Body>

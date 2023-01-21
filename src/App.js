@@ -3,9 +3,8 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { BrowserRouter, Route} from 'react-router-dom';
 import Navigation from '../src/navigation/Navigation'
-// import Home from './component/pages/Home'
 import Home from './components/Home'
-import Service from './component/pages/Service'
+import AddProduct from './components/AddProduct';
 
 function App() {
   return (
@@ -13,7 +12,9 @@ function App() {
       <BrowserRouter>
         <Navigation />
         <Route path="/" exact><Home /></Route>
-        <Route path="/services"><Service /></Route>
+        {/* <Route path="/services"><Service /></Route> */}
+        <Route path="/addproduct"><AddProduct /></Route>
+
       </BrowserRouter>
     </div>
   ) 

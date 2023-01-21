@@ -29,6 +29,7 @@ function Navigation() {
                                     <Link to="/products" className="nav-item text-secondary">Wristlets</Link>
                                     </NavDropdown.Item>
                                 </NavDropdown>
+                                <Link to="/addproduct" className="nav-item text-secondary">Add Product</Link>
                             </Nav>
                             <Nav>
                                 <Nav.Link eventKey={2} href="#memes"></Nav.Link>
