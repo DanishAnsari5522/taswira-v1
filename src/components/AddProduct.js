@@ -36,7 +36,7 @@ function AddProduct() {
                     </Form.Group>
                     <Form.Group controlId="formFile" className="mb-3">
                         <Form.Label>Product Image</Form.Label>
-                        <Form.Control type="file" />
+                        <Form.Control type="file" name="image_hii"/>
                     </Form.Group>
                     <Button type="submit" onClick={onsubmit}>Submit</Button>
                 </fieldset>

@@ -4,7 +4,13 @@ import './Navigation.css'
 import { FaFingerprint } from 'react-icons/fa'
 
 
+
 function Navigation() {
+    const auth = localStorage.getItem('token');
+    const logout=()=>{
+        localStorage.clear();
+        window.location.replace("/");
+    }
     return (
         <div>
             <div>
@@ -17,23 +23,24 @@ function Navigation() {
                                 <Link to="/" className="nav-item text-secondary">Home</Link>
                                 <NavDropdown title="Scrunchies" id="collasible-nav-dropdown" className='select'>
                                     <NavDropdown.Item>
-                                        <Link to="/products" className="nav-item text-secondary">Organza</Link>
+                                        <Link to="/Organza" className="nav-item text-secondary">Organza</Link>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item>
-                                        <Link to="/products" className="nav-item text-secondary">Printed</Link>
+                                        <Link to="/Printed" className="nav-item text-secondary">Printed</Link>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item>
-                                        <Link to="/products" className="nav-item text-secondary">Double Layered Hair Bows</Link>
+                                        <Link to="/doublelayered" className="nav-item text-secondary">Double Layered Hair Bows</Link>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item>
-                                    <Link to="/products" className="nav-item text-secondary">Wristlets</Link>
+                                    <Link to="/Wristlets" className="nav-item text-secondary">Wristlets</Link>
                                     </NavDropdown.Item>
                                 </NavDropdown>
-                                <Link to="/addproduct" className="nav-item text-secondary">Add Product</Link>
+                                {auth?<Link to="/addproduct" className="nav-item text-secondary">Add Product</Link>:<Link  className="nav-item text-secondary"></Link>}
                             </Nav>
                             <Nav>
                                 <Nav.Link eventKey={2} href="#memes"></Nav.Link>
-                                <Link to="/Login" className="nav-item text-secondary">Login</Link>
+                                {auth?<Link to="/Logout" onClick={logout} className="nav-item text-secondary">Logout</Link>:<Link to="/Login" className="nav-item text-secondary">Login</Link>}
+                                
                             </Nav>
                         </Navbar.Collapse>
                     </Container>

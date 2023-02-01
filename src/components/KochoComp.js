@@ -15,12 +15,12 @@ function KochoComp(props) {
                 <Card bsPrefix className='cards'>
 
                     <NavLink exact to={`/DetailProjectComp/${props.id}`} bsPrefix className="navlink">
-                        <Card.Img variant="top" src={d1} className="img w-100" bsPrefix />
+                        <Card.Img variant="top" src={props.productImage} className="img w-100" bsPrefix />
                     </NavLink>
 
                     <Card.Body>
-                        <Card.Title className="title" style={{ width: "108%" }}>In publishing and graphic design, Lorem ipsum is a placeholder text commonly</Card.Title>
-                        <Card.Text className="price">Rs.  150.00</Card.Text>
+                        <Card.Title className="title" style={{ width: "108%" }}>{props.productDetail}</Card.Title>
+                        <Card.Text className="price">Rs. {props.productPrice}</Card.Text>
                         <NavLink exact to={`/DetailProjectComp/${props.id}`} bsPrefix className="add-to-cart">
                             <Button variant="dark">Add To Cart</Button>
                         </NavLink>
