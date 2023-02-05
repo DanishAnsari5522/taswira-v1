@@ -11,6 +11,7 @@ function GetCart() {
     const [price, setPrice] = useState();
     const auth = localStorage.getItem("id");
     let count = 0;
+    let category=',';
 
 
 
@@ -35,26 +36,34 @@ function GetCart() {
     }
 
 
-    const dan = () => {
+    const send = () => {
         product.map((val, ind) => {
             console.log(val.productPrice, ind);
             count = count + val.productPrice;
+            category=category+val.productCategori+':-'+val.productPrice+',';
 
         })
-        console.log("danish ansari" + count);
+        console.log("danish ansari" + count+"caetogr"+category);
         setPrice(count)
+
+       
+        let url="https://wa.me/9262786676?text="
+        +`item:${category}`
+        +`total:${count}`
+        window.open(url,'_blank').focus();
     }
+
 
     useEffect(() => {
         getProduct()
     }, [])
- 
+
     if (itemno === 0) {
         return (
             <div className='ds2'>
                 <div className="container pb-5">
                     <div className='row'>
-                        <h1 className='best'> Best Scunchies</h1>
+                        <h1 className='best'> Your Cart</h1>
                         {
                             product.map((val, ind) => {
                                 return <GetCartComp
@@ -68,7 +77,7 @@ function GetCart() {
                         }
                     </div>
                     <p>Total {price}</p>
-                    <Button >Buy</Button>
+                    <Button onClick={send}>Buy</Button>
 
                 </div>
 

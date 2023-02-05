@@ -60,14 +60,15 @@ function GetCartComp(props) {
                         <Card.Title className="title" style={{ width: "108%" }}>{props.productDetail} and {props.productCategori}</Card.Title>
                         <Card.Text className="price">Rs. {props.productPrice}</Card.Text>
                        <Button variant="dark" onClick={() => {
-                            fetch(`http://localhost:5000/v1/user/delete/${props.id}`, {
+                            fetch(`http://localhost:5000/v1/user/deletecart/${props.id}`, {
                                 method: 'DELETE',
                                 headers: {
                                     'Content-Type': 'application/json',
                                 },
                             })
                                 .then(res => res.json())
-                            window.location.replace("/")
+                                console.log("hii");
+                                window.location.replace("http://localhost:3000/cart");
                         }}>Remove To cart</Button>
                           
                     </Card.Body>

@@ -31,7 +31,10 @@ function User() {
         localStorage.setItem("name", result.name)
         localStorage.setItem("email", result.email)
         localStorage.setItem("phone", result.phone)
-        localStorage.setItem("phone", result.phone)
+        localStorage.setItem("gender", result.gender)
+
+
+        window.location.replace("/");
 
 
 
@@ -63,7 +66,7 @@ function User() {
                 <Form.Group className="mb-3">
                     <Form.Label htmlFor="disabledTextInput">Product Categori</Form.Label>
                     <Form.Select value={gender} onChange={(e) => setGender(e.target.value)}>
-                        <option selected disabled >Add Gender</option>
+                        <option selected>Add Gender</option>
                         <option value="Male" selected>Male</option>
                         <option value="Female">Female</option>
                     </Form.Select>

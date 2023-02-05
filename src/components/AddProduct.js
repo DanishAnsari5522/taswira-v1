@@ -1,3 +1,4 @@
+import { wait } from '@testing-library/user-event/dist/utils';
 import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -9,33 +10,35 @@ function AddProduct() {
     const [productCategori, setProductCategori] = useState('');
     const [productImage, setProductImage] = useState('');
     const [error, setError] = useState('');
-    console.log(productImage);
+
+    const [loading, setLoading] = useState(false);
+    const [image, setImage] = useState("")
+    console.log(image);
 
 
-    const onSubmit = () => {
-       console.log( productDetail, productPrice, productCategori,productImage);
-        const data=new FormData()
-        data.append("productDetail",productDetail)
-        data.append("productPrice",productPrice);
-        data.append("productCategori",productCategori);
-        data.append("productImage",productImage);
-        
-        if (!productDetail) {
-            setError("productDetail Required")
-        } else if (!productPrice) {
-            setError("productPrice Required")
-        } else if (!productCategori) {
-            setError("productCategori Required")
-        } else if (!productImage) {
-            setError("productImage Required")
-        } else {
-            console.log(productDetail);
-            fetch('http://localhost:5000/upload', {
+    const onSubmit = async () => {
+    
+        const data = new FormData();
+        data.append('file', image)
+        data.append('upload_preset', 'Helohair')
+        setLoading(true)
+
+        const res = await fetch("https://api.cloudinary.com/v1_1/dbz8cdpis/image/upload", {
+            method: 'POST',
+            body: data
+        })
+        const file = await res.json()
+        console.log(file.url);
+        setProductImage(file.url)
+        console.log(productDetail, productPrice, productCategori, productImage);
+        if (file.url) {
+            console.log("uploaded");
+            fetch('http://localhost:5000/v1/upload/upload', {
                 method: 'POST',
+                body: JSON.stringify({ productDetail, productPrice, productCategori, productImage }),
                 headers: {
                     'Content-Type': 'application/json',
-                },
-                body:data
+                }
             })
                 .then(res => res.json()).then(
                     data => {
@@ -47,14 +50,19 @@ function AddProduct() {
                         }
                     }
                 )
+
+        } else {
+            console.log("uploaded");
         }
     }
+
+
 
     return (
         <>
             {/* <Form> */}
             <fieldset className='col-md-8 m-auto dan'>
-            {error && <h1>{error}</h1>}
+                {error && <h1>{error}</h1>}
                 <Form.Group className="mb-3 mt-2">
                     <Form.Label htmlFor="disabledTextInput">Product Detail</Form.Label>
                     <Form.Control placeholder="Product Detail" value={productDetail} onChange={(e) => setProductDetail(e.target.value)} />
@@ -66,7 +74,7 @@ function AddProduct() {
                 <Form.Group className="mb-3">
                     <Form.Label htmlFor="disabledTextInput">Product Categori</Form.Label>
                     <Form.Select value={productCategori} onChange={(e) => setProductCategori(e.target.value)}>
-                        <option selected disabled >Add Categori</option>
+                        <option selected>Add Categori</option>
                         <option value="Organza">Organza</option>
                         <option value="Printed">Printed</option>
                         <option value="Double layered Hair bows">Double layered Hair bows</option>
@@ -75,7 +83,7 @@ function AddProduct() {
                 </Form.Group>
                 <Form.Group controlId="formFile" className="mb-3">
                     <Form.Label>Product Image</Form.Label>
-                    <Form.Control type="file" name="image_hii" onChange={(e) => setProductImage(e.target.files[0])}/>
+                    <Form.Control type="file" onChange={(e) => setImage(e.target.files[0])} />
                 </Form.Group>
                 <Button type="submit" onClick={onSubmit}>Submit</Button>
             </fieldset>
