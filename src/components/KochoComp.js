@@ -36,12 +36,12 @@ function KochoComp(props) {
         let pre = localStorage.getItem("Cart");
         localStorage.setItem("Cart", JSON.stringify(props.id + pre));
         if (!auth1) {
-            window.location.replace("http://localhost:3000/user");
+            window.location.replace("user");
             uploadcart();
         } else {
             console.log("hii");
             uploadcart();
-            window.location.replace("http://localhost:3000/cart");
+            window.location.replace("/cart");
 
         }
 

@@ -24,7 +24,7 @@ function CartComp(props) {
                         <Card.Title className="title" style={{ width: "108%" }}>{props.productDetail} and {props.productCategori}</Card.Title>
                         <Card.Text className="price">Rs. {props.productPrice}</Card.Text>
                         {auth ? <Button variant="dark" onClick={() => {
-                            fetch(`http://localhost:5000/v1/user/deletecart/${props.id}`, {
+                            fetch(`https://helo-on-her-hair-api.onrender.com/v1/user/deletecart/${props.id}`, {
                                 method: 'DELETE',
                                 headers: {
                                     'Content-Type': 'application/json',
@@ -32,7 +32,7 @@ function CartComp(props) {
                             })
                                 .then(res => res.json())
                             // window.location.replace("/")
-                            window.location.replace("http://localhost:3000/cart");
+                            window.location.replace("/cart");
                         }}>Delete</Button> : <Button variant="dark" onClick={ds}>Add To Cart</Button>}
 
                     </Card.Body>

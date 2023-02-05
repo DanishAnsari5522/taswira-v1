@@ -18,8 +18,7 @@ function Home() {
                                 <img src={one} className="slider-image" />
                             </div>
                             <div className="first-div">
-                                <h1 className='unlimited'>Unlimited Transactions with zero fees</h1><br />
-                                <Button>Get Started</Button>
+                                <h1 className='unlimited'>Welcome to Helo on her hair</h1><br />
                             </div>
 
                         </div>
@@ -32,8 +31,7 @@ function Home() {
                                 <img src={two} className="slider-image" />
                             </div>
                             <div className="first-div">
-                                <h1 className='unlimited'>Unlimited Transactions with zero fees</h1><br />
-                                <Button>Get Started</Button>
+                                <h1 className='unlimited'>Tie right.Life can be a mess ,why let your hair tir be?</h1><br />
                             </div>
 
                         </div>
@@ -46,8 +44,7 @@ function Home() {
                                 <img src={two} className="slider-image" />
                             </div>
                             <div className="first-div">
-                                <h1 className='unlimited'>Unlimited Transactions with zero fees</h1><br />
-                                <Button>Get Started</Button>
+                                <h1 className='unlimited'>Helo on her hair new offer announced soon</h1><br />
                             </div>
 
                         </div>

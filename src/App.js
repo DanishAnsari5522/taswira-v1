@@ -1,7 +1,7 @@
 import React from 'react';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { BrowserRouter, Redirect, Route } from 'react-router-dom';
+import { BrowserRouter, Route, } from 'react-router-dom';
 import Navigation from '../src/navigation/Navigation'
 import Home from './components/Home'
 import AddProduct from './components/AddProduct';
@@ -22,20 +22,19 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navigation />
+          <Route path="/" exact><Home /></Route>
+          <Route path="/addproduct" exact><AddProduct /></Route>
+          <Route path="/Organza" exact><Organza /></Route>
+          <Route path="/Printed" exact><Printed /></Route>
+          <Route path="/Wristlets" exact><Wristlet /></Route>
+          <Route path="/doublelayered" exact><Double_Layered /></Route>
+          <Route path="/Cart" exact><GetCart /></Route>
+          <Route path="/UpdateProduct/:id" exact><UpdateProduct /></Route>
+          <Route path="/user" exact><User /></Route>
 
-        <Route path="/" exact><Home /></Route>
-        <Route path="/addproduct"><AddProduct /></Route>
-        <Route path="/Organza"><Organza /></Route>
-        <Route path="/Printed"><Printed /></Route>
-        <Route path="/Wristlets"><Wristlet /></Route>
-        <Route path="/doublelayered"><Double_Layered /></Route>
-        <Route path="/Cart"><GetCart /></Route>
-        <Route path="/UpdateProduct/:id"><UpdateProduct /></Route>
-        <Route path="/user"><User /></Route>
 
-
-        {auth ? <Route path="/Logout"><Logout /></Route> : <Route path="/Login"><Login /></Route>}
-        {/* <Redirect to="/" /> */}
+          {auth ? <Route path="/Logout"><Logout /></Route> : <Route path="/Login"><Login /></Route>}
+          {/* <Redirect to="/" /> */}
       </BrowserRouter>
     </div>
   )

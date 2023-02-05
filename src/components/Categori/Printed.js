@@ -8,7 +8,7 @@ function Printed() {
 
     let getProduct = async () => {
 
-        let result = await fetch(`http://localhost:5000/v1/upload/search?name=Printed`, {
+        let result = await fetch(`https://helo-on-her-hair-api.onrender.com/v1/upload/search?name=Printed`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

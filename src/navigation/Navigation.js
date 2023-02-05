@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './Navigation.css'
 import { FaFingerprint,FaOpencart } from 'react-icons/fa'
 import {GrCart} from 'react-icons/gr'
+import logo from '../assets/logo.jpg'
 
 
 
@@ -17,7 +18,7 @@ function Navigation() {
             <div>
                 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                     <Container className="dan">
-                        <Navbar.Brand>Helo on her hair</Navbar.Brand>
+                        <Navbar.Brand> <img src={logo} className="logo" />Helo on her hair</Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto">
