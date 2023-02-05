@@ -1,19 +1,24 @@
 import React, { useState, useEffect } from 'react'
-import KochoComp from './KochoComp';
-import '../css/Kocho.css'
+import KochoComp from '../KochoComp';
+import '../../css/Kocho.css'
+import GetCartComp from './GetCartComp';
+import { Button } from 'react-bootstrap';
 
-function Kocho() {
+
+function GetCart() {
     const [itemno, setItemno] = useState(0);
     const [product, setProduct] = useState([]);
-    const [selects,setSelects]=useState('Organza');
- 
- 
- 
+    const [price, setPrice] = useState();
+    const auth = localStorage.getItem("id");
+    let count = 0;
+
+
+
     console.log(itemno);
 
     let getProduct = async () => {
 
-        let result = await fetch(`http://localhost:5000/v1/upload`, {
+        let result = await fetch(`http://localhost:5000/v1/user/getCartById?postedBy=${auth}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -29,9 +34,21 @@ function Kocho() {
         }
     }
 
+
+    const dan = () => {
+        product.map((val, ind) => {
+            console.log(val.productPrice, ind);
+            count = count + val.productPrice;
+
+        })
+        console.log("danish ansari" + count);
+        setPrice(count)
+    }
+
     useEffect(() => {
         getProduct()
-    },[])
+    }, [])
+ 
     if (itemno === 0) {
         return (
             <div className='ds2'>
@@ -40,7 +57,7 @@ function Kocho() {
                         <h1 className='best'> Best Scunchies</h1>
                         {
                             product.map((val, ind) => {
-                                return <KochoComp
+                                return <GetCartComp
                                     productImage={val.productImage}
                                     productDetail={val.productDetail}
                                     productPrice={val.productPrice}
@@ -49,12 +66,15 @@ function Kocho() {
                                 />
                             })
                         }
-
                     </div>
+                    <p>Total {price}</p>
+                    <Button >Buy</Button>
+
                 </div>
+
             </div>
         )
     }
 }
 
-export default Kocho;
+export default GetCart;

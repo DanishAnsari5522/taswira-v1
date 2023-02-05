@@ -49,10 +49,11 @@ function Login() {
                         <Form.Control placeholder="User Name" value={name} onChange={(e) => setName(e.target.value)} />
                     </Form.Group>
                     <Form.Group className="mb-3 mt-2">
-                        <Form.Control placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+                        <Form.Control type='password' placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}/>
                     </Form.Group>
                     <Button type="submit" onClick={onsubmit}>Login</Button>
                 </fieldset>
+                <a aria-label="Chat on WhatsApp" href="https://wa.me/9262786676"> <img alt="Chat on WhatsApp" src="WhatsAppButtonGreenLarge.png" /></a>
             {/* </Form> */}
         </>
     )

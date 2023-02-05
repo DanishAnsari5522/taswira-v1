@@ -8,7 +8,7 @@ function Wristlet() {
 
     let getProduct = async () => {
 
-        let result = await fetch(`http://localhost:5000/v1/upload/search?name=wristlet`, {
+        let result = await fetch(`http://localhost:5000/v1/upload/search?name=Wristlet`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ function Wristlet() {
                                 productDetail={val.productDetail}
                                 productPrice={val.productPrice}
                                 productCategori={val.productCategori}
-                                id={val.id}
+                                id={val._id}
                             />
                         })
                     }

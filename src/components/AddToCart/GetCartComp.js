@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-import '../css/KochoComp.css'
-function KochoComp(props) {
+import '../../css/KochoComp.css'
+function GetCartComp(props) {
     const auth = localStorage.getItem('token');
     const [carts, setCarts] = useState([]);
     const [item, setItem] = useState([]);
@@ -41,11 +41,10 @@ function KochoComp(props) {
         } else {
             console.log("hii");
             uploadcart();
-            window.location.replace("http://localhost:3000/cart");
-
         }
 
     }
+
 
     return (
         <>
@@ -60,8 +59,8 @@ function KochoComp(props) {
                     <Card.Body>
                         <Card.Title className="title" style={{ width: "108%" }}>{props.productDetail} and {props.productCategori}</Card.Title>
                         <Card.Text className="price">Rs. {props.productPrice}</Card.Text>
-                        {auth ? <><Button variant="dark" onClick={() => {
-                            fetch(`http://localhost:5000/v1/upload/delete/${props.id}`, {
+                       <Button variant="dark" onClick={() => {
+                            fetch(`http://localhost:5000/v1/user/delete/${props.id}`, {
                                 method: 'DELETE',
                                 headers: {
                                     'Content-Type': 'application/json',
@@ -69,17 +68,14 @@ function KochoComp(props) {
                             })
                                 .then(res => res.json())
                             window.location.replace("/")
-                        }}>Delete</Button>
-                            <NavLink exact to={`/UpdateProduct/${props.id}`} bsPrefix className="add-to-cart">
-                                <Button variant="dark" style={{ marginLeft: "40px" }}>Edit</Button>
-                            </NavLink>
-                        </> : <Button variant="dark" onClick={ds}>Add To Cart</Button>}
-
+                        }}>Remove To cart</Button>
+                          
                     </Card.Body>
                 </Card>
+               
             </div>
         </>
     )
 }
 
-export default KochoComp;
+export default GetCartComp;

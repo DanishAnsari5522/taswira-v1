@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import KochoComp from './KochoComp';
-import '../css/Kocho.css'
+import KochoComp from '../KochoComp';
+import '../../css/Kocho.css'
 
-function Kocho() {
+function Cart() {
     const [itemno, setItemno] = useState(0);
     const [product, setProduct] = useState([]);
     const [selects,setSelects]=useState('Organza');
@@ -13,7 +13,7 @@ function Kocho() {
 
     let getProduct = async () => {
 
-        let result = await fetch(`http://localhost:5000/v1/upload`, {
+        let result = await fetch(`http://localhost:5000/v1/upload/product?id=63dbafd83c7ba8cec8ded823`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -57,4 +57,4 @@ function Kocho() {
     }
 }
 
-export default Kocho;
+export default Cart;

@@ -8,7 +8,7 @@ function Organza() {
 
     let getProduct = async () => {
 
-        let result = await fetch(`http://localhost:5000/v1/upload/search?name=deep`, {
+        let result = await fetch(`http://localhost:5000/v1/upload/search?name=Organza`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ function Organza() {
                                 productDetail={val.productDetail}
                                 productPrice={val.productPrice}
                                 productCategori={val.productCategori}
-                                id={val.id}
+                                id={val._id}
                             />
                         })
                     }
