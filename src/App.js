@@ -23,14 +23,14 @@ function App() {
       <BrowserRouter>
         <Navigation />
           <Route path="/" exact><Home /></Route>
-          <Route path="/addproduct" exact><AddProduct /></Route>
-          <Route path="/Organza" exact><Organza /></Route>
-          <Route path="/Printed" exact><Printed /></Route>
-          <Route path="/Wristlets" exact><Wristlet /></Route>
-          <Route path="/doublelayered" exact><Double_Layered /></Route>
-          <Route path="/Cart" exact><GetCart /></Route>
-          <Route path="/UpdateProduct/:id" exact><UpdateProduct /></Route>
-          <Route path="/User" exact><User /></Route>
+          <Route path="/addproduct" ><AddProduct /></Route>
+          <Route path="/Organza" ><Organza /></Route>
+          <Route path="/Printed" ><Printed /></Route>
+          <Route path="/Wristlets" ><Wristlet /></Route>
+          <Route path="/doublelayered" ><Double_Layered /></Route>
+          <Route path="/Cart" ><GetCart /></Route>
+          <Route path="/UpdateProduct/:id" ><UpdateProduct /></Route>
+          <Route path="/User" ><User /></Route>
 
 
           {auth ? <Route path="/Logout"><Logout /></Route> : <Route path="/Login"><Login /></Route>}
