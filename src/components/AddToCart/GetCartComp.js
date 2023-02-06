@@ -52,9 +52,9 @@ function GetCartComp(props) {
             <div className="col-md-3 p-3">
                 <Card bsPrefix className='cards'>
 
-                    <NavLink exact to={`/DetailProjectComp/${props.id}`} bsPrefix className="navlink">
+                    {/* <NavLink exact to={`/DetailProjectComp/${props.id}`} bsPrefix className="navlink"> */}
                         <Card.Img variant="top" src={props.productImage} className="img w-100" bsPrefix />
-                    </NavLink>
+                    {/* </NavLink> */}
 
                     <Card.Body>
                         <Card.Title className="title" style={{ width: "108%" }}>{props.productDetail} and {props.productCategori}</Card.Title>
@@ -68,7 +68,7 @@ function GetCartComp(props) {
                             })
                                 .then(res => res.json())
                                 console.log("hii");
-                                window.location.replace("/cart");
+                                window.location.replace("/Cart");
                         }}>Remove To cart</Button>
                           
                     </Card.Body>

@@ -30,7 +30,7 @@ function App() {
           <Route path="/doublelayered" exact><Double_Layered /></Route>
           <Route path="/Cart" exact><GetCart /></Route>
           <Route path="/UpdateProduct/:id" exact><UpdateProduct /></Route>
-          <Route path="/user" exact><User /></Route>
+          <Route path="/User" exact><User /></Route>
 
 
           {auth ? <Route path="/Logout"><Logout /></Route> : <Route path="/Login"><Login /></Route>}

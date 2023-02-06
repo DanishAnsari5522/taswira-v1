@@ -36,12 +36,12 @@ function KochoComp(props) {
         let pre = localStorage.getItem("Cart");
         localStorage.setItem("Cart", JSON.stringify(props.id + pre));
         if (!auth1) {
-            window.location.replace("user");
+            window.location.replace("/User");
             uploadcart();
         } else {
             console.log("hii");
             uploadcart();
-            window.location.replace("/cart");
+            window.location.replace("/Cart");
 
         }
 
@@ -53,15 +53,15 @@ function KochoComp(props) {
             <div className="col-md-3 p-3">
                 <Card bsPrefix className='cards'>
 
-                    <NavLink exact to={`/DetailProjectComp/${props.id}`} bsPrefix className="navlink">
+                    {/* <NavLink exact to={`/DetailProjectComp/${props.id}`} bsPrefix className="navlink"> */}
                         <Card.Img variant="top" src={props.productImage} className="img w-100" bsPrefix />
-                    </NavLink>
+                    {/* </NavLink> */}
 
                     <Card.Body>
                         <Card.Title className="title" style={{ width: "108%" }}>{props.productDetail} and {props.productCategori}</Card.Title>
                         <Card.Text className="price">Rs. {props.productPrice}</Card.Text>
                         {auth ? <><Button variant="dark" onClick={() => {
-                            fetch(`http://localhost:5000/v1/upload/delete/${props.id}`, {
+                            fetch(`http://localhost:5000/v1/upload/deletecart/${props.id}`, {
                                 method: 'DELETE',
                                 headers: {
                                     'Content-Type': 'application/json',

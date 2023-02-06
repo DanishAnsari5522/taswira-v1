@@ -8,7 +8,7 @@ function AddProduct() {
     const [productDetail, setProductDetail] = useState('');
     const [productPrice, setProductPrice] = useState('');
     const [productCategori, setProductCategori] = useState('');
-    const [productImage, setProductImage] = useState('');
+    // const [productImage, setProductImage] = useState('');
     const [error, setError] = useState('');
 
     const [loading, setLoading] = useState(false);
@@ -17,7 +17,7 @@ function AddProduct() {
 
 
     const onSubmit = async () => {
-    
+
         const data = new FormData();
         data.append('file', image)
         data.append('upload_preset', 'Helohair')
@@ -29,9 +29,11 @@ function AddProduct() {
         })
         const file = await res.json()
         console.log(file.url);
-        setProductImage(file.url)
-        console.log(productDetail, productPrice, productCategori, productImage);
+        // setProductImage(file.url)
+        console.log(productDetail, productPrice, productCategori, file.url);
+        let productImage;
         if (file.url) {
+            productImage = file.url;
             console.log("uploaded");
             fetch('https://helo-on-her-hair-api.onrender.com/v1/upload/upload', {
                 method: 'POST',
@@ -46,9 +48,11 @@ function AddProduct() {
                         if (data.error) {
                             setError(data.error);
                             alert(data.error)
+                            // alert("Select the Category");
                         } else {
                             // navigation.navigate('Home');
-                            // window.location.replace("/");
+                            alert("Submit successfully");
+                            window.location.replace("/");
                         }
                     }
                 )
@@ -64,7 +68,7 @@ function AddProduct() {
         <>
             {/* <Form> */}
             <fieldset className='col-md-8 m-auto dan'>
-                {error && <h1>{error}</h1>}
+                {error && <h1 style={{ margin: "50px" }}>{error}</h1>}
                 <Form.Group className="mb-3 mt-2">
                     <Form.Label htmlFor="disabledTextInput">Product Detail</Form.Label>
                     <Form.Control placeholder="Product Detail" value={productDetail} onChange={(e) => setProductDetail(e.target.value)} />

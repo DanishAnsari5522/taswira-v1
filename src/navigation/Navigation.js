@@ -42,7 +42,7 @@ function Navigation() {
                             <Nav>
                                 <Nav.Link eventKey={2} href="#memes"></Nav.Link>
                                 {auth?<Link to="/Logout" onClick={logout} className="nav-item text-secondary">Logout</Link>:<Link to="/Login" className="nav-item text-secondary">Login</Link>}
-                                {auth?<p></p>:<Link to="/cart"><FaOpencart className="text-red icon1"/></Link>}
+                                {auth?<p></p>:<Link to="/Cart"><FaOpencart className="text-red icon1"/></Link>}
                                
                             </Nav>
                         </Navbar.Collapse>
