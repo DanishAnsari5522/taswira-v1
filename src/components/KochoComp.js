@@ -15,7 +15,7 @@ function KochoComp(props) {
     let postedBy=auth1;
 
     const uploadcart = () => {
-        fetch('http://localhost:5000/cart', {
+        fetch('https://helo-on-her-hair-api.onrender.com/cart', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -61,7 +61,7 @@ function KochoComp(props) {
                         <Card.Title className="title" style={{ width: "108%" }}>{props.productDetail} and {props.productCategori}</Card.Title>
                         <Card.Text className="price">Rs. {props.productPrice}</Card.Text>
                         {auth ? <><Button variant="dark" onClick={() => {
-                            fetch(`http://localhost:5000/v1/upload/deletecart/${props.id}`, {
+                            fetch(`https://helo-on-her-hair-api.onrender.com/v1/upload/deletecart/${props.id}`, {
                                 method: 'DELETE',
                                 headers: {
                                     'Content-Type': 'application/json',
