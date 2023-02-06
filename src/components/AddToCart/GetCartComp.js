@@ -8,11 +8,11 @@ function GetCartComp(props) {
     const [item, setItem] = useState([]);
     console.log(props);
     let auth1 = localStorage.getItem("id");
-    let productImage=props.productImage;
-    let productDetail=props.productDetail;
-    let productCategori=props.productCategori;
-    let productPrice=props.productPrice;
-    let postedBy=auth1;
+    let productImage = props.productImage;
+    let productDetail = props.productDetail;
+    let productCategori = props.productCategori;
+    let productPrice = props.productPrice;
+    let postedBy = auth1;
 
     const uploadcart = () => {
         fetch('https://helo-on-her-hair-api.onrender.com/cart', {
@@ -20,9 +20,9 @@ function GetCartComp(props) {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body:JSON.stringify({productCategori,productDetail,productImage,productPrice,postedBy})
+            body: JSON.stringify({ productCategori, productDetail, productImage, productPrice, postedBy })
         });
-            
+
         // console.log(props.productImage);
         // console.log(props.productDetail);
         // console.log(props.productCategori);
@@ -53,27 +53,35 @@ function GetCartComp(props) {
                 <Card bsPrefix className='cards'>
 
                     {/* <NavLink exact to={`/DetailProjectComp/${props.id}`} bsPrefix className="navlink"> */}
-                        <Card.Img variant="top" src={props.productImage} className="img w-100" bsPrefix />
+                    <Card.Img variant="top" src={props.productImage} className="img w-100" bsPrefix />
                     {/* </NavLink> */}
 
                     <Card.Body>
                         <Card.Title className="title" style={{ width: "108%" }}>{props.productDetail} and {props.productCategori}</Card.Title>
                         <Card.Text className="price">Rs. {props.productPrice}</Card.Text>
-                       <Button variant="dark" onClick={() => {
+                        <Button variant="dark" onClick={() => {
                             fetch(`https://helo-on-her-hair-api.onrender.com/v1/user/deletecart/${props.id}`, {
                                 method: 'DELETE',
                                 headers: {
                                     'Content-Type': 'application/json',
                                 },
-                            })
-                                .then(res => res.json())
-                                console.log("hii");
-                                window.location.replace("/Cart");
+                            }).then(res => res.json().then(
+                                async task => {
+                                    console.log(task);
+                                    if (task.success == false) {
+                                        alert("Error")
+                                    } else {
+                                        window.location.replace("/Cart");
+
+                                    }
+
+                                }))
+
                         }}>Remove To cart</Button>
-                          
+
                     </Card.Body>
                 </Card>
-               
+
             </div>
         </>
     )

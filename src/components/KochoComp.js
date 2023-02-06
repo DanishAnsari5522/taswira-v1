@@ -14,34 +14,46 @@ function KochoComp(props) {
     let productPrice = props.productPrice;
     let postedBy = auth1;
 
+    let result
     const uploadcart = () => {
-        fetch('https://helo-on-her-hair-api.onrender.com/cart', {
+        result = fetch('https://helo-on-her-hair-api.onrender.com/cart', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({ productCategori, productDetail, productImage, productPrice, postedBy })
-        });
+        }).then(res => res.json()).then(
+            data => {
+                console.log(data);
+                if (data.error) {
+                    alert(data.error)
+                    // alert("Select the Category");
+                } else {
+                    // navigation.navigate('Home');
+                    alert("Submit successfully");
+                    window.location.replace("/Cart");
 
-        // console.log(props.productImage);
-        // console.log(props.productDetail);
-        // console.log(props.productCategori);
-        // console.log(props.productPrice);
-        // console.log(auth1);
+                }
+            }
+        )
+
+        console.log(props.productImage);
+        console.log(props.productDetail);
+        console.log(props.productCategori);
+        console.log(props.productPrice);
+        console.log(auth1);
 
 
     }
 
     const ds = () => {
-        let pre = localStorage.getItem("Cart");
-        localStorage.setItem("Cart", JSON.stringify(props.id + pre));
+        // let pre = localStorage.getItem("Cart");
+        // localStorage.setItem("Cart", JSON.stringify(props.id + pre));
         if (!auth1) {
             window.location.replace("/User");
-            uploadcart();
         } else {
             console.log("hii");
             uploadcart();
-            window.location.replace("/Cart");
 
         }
 
@@ -72,11 +84,11 @@ function KochoComp(props) {
                                         console.log(task);
                                         if (task.success == false) {
                                             alert("Error")
-                                        } else{
+                                        } else {
                                             window.location.replace("/")
-                                            
+
                                         }
-                                       
+
                                     }))
                         }}>Delete</Button>
                             <NavLink exact to={`/UpdateProduct/${props.id}`} className="add-to-cart">
