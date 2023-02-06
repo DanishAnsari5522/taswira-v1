@@ -37,7 +37,6 @@ function Navigation() {
                                     <Link to="/Wristlets" className="nav-item text-secondary">Wristlets</Link>
                                     </NavDropdown.Item>
                                 </NavDropdown>
-                                <Link to="/User" className="nav-item text-secondary">User</Link>
                                 {auth?<Link to="/addproduct" className="nav-item text-secondary">Add Product</Link>:<Link  className="nav-item text-secondary"></Link>}
                             </Nav>
                             <Nav>

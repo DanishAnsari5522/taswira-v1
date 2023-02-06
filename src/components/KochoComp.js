@@ -74,6 +74,7 @@ function KochoComp(props) {
                                             alert("Error")
                                         } else{
                                             window.location.replace("/")
+                                            
                                         }
                                        
                                     }))
