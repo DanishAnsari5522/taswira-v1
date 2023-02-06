@@ -34,7 +34,6 @@ function AddProduct() {
         let productImage;
         if (file.url) {
             productImage = file.url;
-            console.log("uploaded");
             fetch('https://helo-on-her-hair-api.onrender.com/v1/upload/upload', {
                 method: 'POST',
                 body: JSON.stringify({ productDetail, productPrice, productCategori, productImage }),
@@ -48,10 +47,8 @@ function AddProduct() {
                         if (data.error) {
                             setError(data.error);
                             alert(data.error)
-                            // alert("Select the Category");
                         } else {
                             // navigation.navigate('Home');
-                            alert("Submit successfully");
                             window.location.replace("/");
                         }
                     }

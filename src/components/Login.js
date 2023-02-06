@@ -53,7 +53,6 @@ function Login() {
                     </Form.Group>
                     <Button type="submit" onClick={onsubmit}>Login</Button>
                 </fieldset>
-                <a aria-label="Chat on WhatsApp" href="https://wa.me/9262786676"> <img alt="Chat on WhatsApp" src="WhatsAppButtonGreenLarge.png" /></a>
             {/* </Form> */}
         </>
     )
