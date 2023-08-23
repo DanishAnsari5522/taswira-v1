@@ -1,0 +1,28 @@
+.PhotographyPackageComp {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(https://www.weddingreels.in/wp-content/uploads/2022/01/pre-wedding3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    background-position: center;
+    padding-top: 50px;
+}
+
+.beit {
+    color: white;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    margin-bottom: -40px;
+}
+
+@media screen and (max-width:500px) {
+    .PhotographyPackageComp {
+        height: 180vh;
+        background-position: left;
+    }
+
+    .beit {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,28 @@
+.MainAbout {
+    background-color: rgb(44, 43, 43);
+}
+
+.AboutComp {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(https://www.weddingreels.in/wp-content/uploads/2022/01/pre-wedding3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    background-position: center;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.getQuote1 {
+    border: 1px solid gold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: gold;
+    margin-top: 20px;
+}
+
+.getQuote1:hover {
+    background-color: gold;
+    color: black;
+}

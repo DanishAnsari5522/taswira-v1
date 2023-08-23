@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import logo from '../../src/assets/main1.png';
-import { Link } from 'react-router-dom'
+// import logo from './images/logo.png'
 
 import './Navbar.css'
 
-const Navigation = () => {
+const Test1 = () => {
 
     const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click)
@@ -16,7 +15,7 @@ const Navigation = () => {
         <div className='header'>
             <nav className='navbar'>
                 <a href='/' className='logo'>
-                    <img src={logo} alt='logo' />
+                    <img src='' alt='logo' />
                 </a>
                 <div className='hamburger' onClick={handleClick}>
                     {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
@@ -25,16 +24,16 @@ const Navigation = () => {
                 </div>
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className='nav-item'>
-                        <Link to='/' onClick={closeMenu}>Home</Link>
+                        <a href='/' onClick={closeMenu}>Home</a>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/about' onClick={closeMenu}>About Us</Link>
+                        <a href='#about' onClick={closeMenu}>About</a>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/gallery' onClick={closeMenu}>gallery</Link>
+                        <a href='#testimonials' onClick={closeMenu}>Testimonials</a>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/contact' onClick={closeMenu}>Contact Us</Link>
+                        <a href='#demo' onClick={closeMenu}>Demo</a>
                     </li>
                 </ul>
             </nav>
@@ -42,4 +41,4 @@ const Navigation = () => {
     )
 }
 
-export default Navigation;
+export default Test1;

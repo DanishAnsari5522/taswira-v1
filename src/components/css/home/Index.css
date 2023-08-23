@@ -1,0 +1,88 @@
+.HomeComp{
+background-color: rgb(44, 43, 43);
+}
+
+.whatwedocomp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.whatwedoimg {
+    width: 45%;
+    height: 100%;
+}
+
+.whatwedo {
+    background-color: black;
+    width: 55%;
+    padding: 100px;
+    height: 100%;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.whatweimg {
+    width: 100%;
+    height: 100%;
+}
+
+.getQuote{
+    border: 1px solid gold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 100%;
+    color: gold;
+    margin-top: 20px;
+}
+
+.getQuote:hover{
+    background-color: gold;
+    color: black;
+}
+
+.OfferComp {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(https://www.weddingreels.in/wp-content/uploads/2022/01/pre-wedding3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    background-position: center;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.getQuote1{
+    border: 1px solid gold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: gold;
+    margin-top: 20px;
+}
+
+.getQuote1:hover{
+    background-color: gold;
+    color: black;
+}
+
+@media screen and (max-width:500px) {
+   
+
+    .whatwedocomp {
+        display: inline-block;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .whatwedoimg {
+        width: 100%;
+    }
+
+    .whatwedo {
+        background-color: black;
+        width: 100%;
+        padding: 40px;
+    }    
+}

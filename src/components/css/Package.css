@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mainDiv {
+    width: 100%;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .mainDiv {
+        width: 100%;
+        /* adjust width for larger screens */
+    }
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: black ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 15vh;
+    background: rgba(0, 0, 0, 0.3);
+    color: rgb(8, 8, 8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        width: 100%;
+
+    }
+}
+
+nav .logo {
+    width: 25%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000 ;
+}
+
+.logomain {
+    height: 150px;
+    width: 150px;
+    align-items: center;
+    margin-left: 42%;
+    opacity: 6;
+
+
+}
+
+nav .menu {
+    margin-right: 30%;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+} 
+
+nav .menu a {
+    width: 40%;
+    text-decoration: none;
+    color: rgb(255, 249, 249);
+    font-size: 23;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+
+} 
+
+nav .menu a:first-child {
+    color: #f1f4f3;
+
+}
+
+main {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(15, 14, 14);
+
+}
+
+.color {
+    color: white;
+}
+
+section h3 {
+    margin-top: 40;
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px rgb(255, 252, 252);
+}
+
+section h5 {
+    color: rgb(6, 6, 6);
+    margin-top: 15%;
+    margin-bottom: 5%;
+    letter-spacing: .2cm;
+    word-spacing: .8cm;
+    font-weight: 800;
+    text-shadow: 3px 3px 3px rgb(255, 255, 255);
+
+
+}
+
+section h6 {
+    color: rgb(0, 0, 0);
+
+
+}
+
+section h2 {
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px rgb(245, 243, 243);
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: 25px;
+    color: #eee;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+
+select {
+    width: 150px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select:focus {
+    outline: none;
+    border: 1px solid blue;
+}
+
+section .btnone {
+
+    background: #fff;
+    color: black;
+}
+
+.btnone:hover {
+    background-color: #000000;
+    color: white;
+}
+
+section .btntwo {
+    background-color: #000000;
+    color: white;
+
+}
+
+.btntwo:hover {
+    background: #fff;
+    color: black;
+
+}
+
+.change_content::after {
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #060606;
+} 
+
+.backimg {
+    opacity: 5;
+    background-image: url('../../assets/back.jpg');
+    background-size: 225vh;
+    height: 100vh;
+
+}
+
+.line-above-text::before {
+    content: "";
+    display: inline-block;
+    border-top: 2px solid rgb(0, 0, 0);
+    /* set the border style and color */
+    margin-bottom: 10px;
+    /* set the distance between the line and the text */
+    width: 100%;
+    /* set the line width to fill the container */
+}
+
+.back2 {
+    height: 200%;
+    width: 100%;
+}
+
+.part2 {
+
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(https://www.weddingreels.in/wp-content/uploads/2022/01/pre-wedding3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150vh;
+    background-position: center;
+}
+
+.part2 p {
+    color: #f8f8f8;
+    margin-left: 24%;
+    letter-spacing: .2cm;
+    word-spacing: 1cm;
+    text-shadow: 3px 3px 3px black;
+}
+
+
+
+.part2 h1 {
+    margin-top: 3%;
+    margin-left: 15%;
+    color: #ffffff;
+    text-shadow: 3px 3px 3px black;
+    letter-spacing: .1cm;
+    font-weight: 900;
+}
+.part2 h5{
+    margin-top: 3%;
+    margin-left: 35%;
+    color: #eee;
+}
+
+/* .flipper{
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .flipcard1{
+    margin: 30px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+  .flipcardfront,
+  .flipcardback{
+    width: 380px;
+    min-height: 800px;
+    height: 50%;
+    background-color: #000000;
+    background-image: url(../../assets/back.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+  }
+  .flipcardfront{
+    transform: rotateY('0deg');
+}
+.flipcardback{
+    position:absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY('180deg');
+
+}
+.flipcardfront::after,
+.flipcardback::after{
+    content: '';
+    width: 50%;
+    height: 50%;
+    background-color: aqua;
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+.flipcardfront .flipinner,
+.flipcardback .flipinner
+{
+width: 100%;
+padding: 40px;
+position: absolute;
+top: 50%;
+transform: translateY(-50%) translateZ(60%) scale(0.94);
+z-index: 2;
+}
+.flipinner .icon{
+width: 80px;
+margin-bottom: 4px;
+}
+.flipinner h3{
+    margin-bottom: 8px;
+    color: #0a0a0a;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: capitalize;
+    
+}
+.flipinner p{  
+    color: #0a0a0a;
+    font-size: 16px;
+    line-height: 28px;
+       
+}
+.flipcard1:hover .flipcardfront{
+    transform: rotateY('-180deg');
+}
+.flipcard1:hover .flipcardback{
+    transform: rotateY('0deg');
+} */
+.part3 {
+
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    width: 100%;
+}
+
+.part3 h1 {
+    color: #f0c65a;
+    margin-right: 67%;
+   
+    border-radius: 35px; 
+    margin-left: 6.6%;   
+    margin-bottom: 2%;
+
+}
+
+
+.part3 p {
+    color: white;
+    margin-top: 3%0;
+    margin-left: 7%;
+}
+
+
+.inner {
+    margin-top: .1%;
+    
+
+}
+
+.cont2 {
+    display: block;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: .1%;
+}
+
+.conta {
+    display: block;
+    background-color: rgb(2, 2, 2);
+    margin-bottom: .1%;
+}
+.inner,
+.dinner {
+    display: block;
+    
+}
+
+.part4 {
+    height: 100%;
+    width: 100%;
+
+    background-image: url('../../assets/back2.jpg');
+
+}
+
+.part4 h1 {
+    font-weight: 800;
+    text-shadow: 2px 2px 2px black;
+    color: #fcfcfc;
+    margin-left: 25%;
+}
+
+.part4 p {
+    margin-top: 2%;
+    margin-left: 35%;
+    color: #fefefe;
+}
+
+.part4 a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+    margin-left: 45%;
+
+}
+
+.part4 .btntwo {
+    background-color: #f0c65a;
+    color: rgb(255, 255, 255);
+    border-color: #070707;
+
+
+}
+
+.btntwo:hover {
+    background: #ffffff;
+    color: #010101;
+
+
+}
+
+.exp1 .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin-left: 30px;
+
+}
+
+.exp1 .box-container .box {
+    background-color: #000000;
+    position: relative;
+    flex: .7 .7 5rem;
+    border-left: .1rem solid white;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    box-shadow: 0 .5rem 1rem rgba(177, 176, 176, 0.7);
+}
+
+.exp1 .box-container .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: rgb(255, 254, 254);
+}
+
+.exp1 .box-container .box .content {
+    background: #fff;
+    padding: 1.5rem;
+    /* box-shadow: 0 .1rem 1rem rgba(0, 0, 0, .1); */
+    border-radius: 3rem;
+    background-color: #6e6d6d;
+}
+
+/* .exp1 .box-container .box .content span {
+    color: #fff;
+    font-size: 1.7rem;
+    background: rgb(0, 0, 0);
+    border-radius: 50rem;
+    padding: .4rem 1rem;
+} */
+
+.exp1 .box-container .box .content h3 {
+    font-size: 2.5rem;
+    padding: .5rem 0;
+    color: #111;
+}
+
+.exp1 .box-container .box .content p {
+    font-size: 1.7rem;
+    color: #666;
+}
+
+

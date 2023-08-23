@@ -1,0 +1,47 @@
+.item {
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    height: 200px;
+    margin: 4px;
+    padding: 15px;
+    color: white;
+    /* border-radius:10px; */
+}
+
+.itempara {
+    font-size: 14px;
+}
+
+
+.carosalMain {
+    padding: 0 10px;
+    background-color: red;
+    margin-top: 100px;
+}
+
+.bestCompany {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 100px;
+    text-align: center;
+    color: white;
+}
+
+.teamready {
+    font-size: 20px;
+    padding: 10px 400px;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width:500px) {
+    .bestCompany {
+        font-size: 26px;
+        padding: 10px 20px;
+    }
+
+    .teamready {
+        padding: 10px 20px;
+    }
+}
