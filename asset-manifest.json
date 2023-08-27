@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/taswira-v1/static/css/main.d59d0bf6.css",
-    "main.js": "/taswira-v1/static/js/main.eba6fb4a.js",
+    "main.js": "/taswira-v1/static/js/main.0f60f830.js",
     "static/media/back9.jpg": "/taswira-v1/static/media/back9.37c8ed53b93891b6aae5.jpg",
     "static/media/back.jpg": "/taswira-v1/static/media/back.2dce0da296f25898b04f.jpg",
     "static/media/taswiraimg.png": "/taswira-v1/static/media/taswiraimg.2d13c565dcde130733ca.png",
@@ -12,10 +12,10 @@
     "static/media/main1.png": "/taswira-v1/static/media/main1.c95367b52e8de9af8d9d.png",
     "index.html": "/taswira-v1/index.html",
     "main.d59d0bf6.css.map": "/taswira-v1/static/css/main.d59d0bf6.css.map",
-    "main.eba6fb4a.js.map": "/taswira-v1/static/js/main.eba6fb4a.js.map"
+    "main.0f60f830.js.map": "/taswira-v1/static/js/main.0f60f830.js.map"
   },
   "entrypoints": [
     "static/css/main.d59d0bf6.css",
-    "static/js/main.eba6fb4a.js"
+    "static/js/main.0f60f830.js"
   ]
 }
