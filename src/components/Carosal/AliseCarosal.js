@@ -50,7 +50,7 @@ const CarouselAlice = () => {
             <p style={{ color: 'white', textAlign: 'center', color: 'gold' }}>WHAT MAKES US DIFFERENT?</p>
             <p className='bestCompany'>We are the leading wedding photography service provider company, we never hesitate to commit and never fail to deliver.</p>
             <p className='teamready'>Our equipped team is ready to capture all the spectrum of your wedding events.</p>
-            <AliceCarousel
+            {/* <AliceCarousel
                 mouseTracking
                 items={items}
                 responsive={responsive}
@@ -63,7 +63,7 @@ const CarouselAlice = () => {
                 autoPlayInterval={2000}
                 autoPlayStrategy="all"
 
-            />
+            /> */}
             <FinalCarosal />
         </>
     )
