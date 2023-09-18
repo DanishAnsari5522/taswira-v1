@@ -15,9 +15,9 @@ const Navigation = () => {
     return (
         <div className='header'>
             <nav className='navbar'>
-                <a href='/' className='logo'>
+                <Link to='/' className='logo'>
                     <img src={logo} alt='logo' />
-                </a>
+                </Link>
                 <div className='hamburger' onClick={handleClick}>
                     {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
                         : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
@@ -28,13 +28,13 @@ const Navigation = () => {
                         <Link to='/' onClick={closeMenu}>Home</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/about' onClick={closeMenu}>About Us</Link>
+                        <Link to='/about' onClick={closeMenu}>About US</Link>
                     </li>
                     <li className='nav-item'>
                         <Link to='/gallery' onClick={closeMenu}>gallery</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/contact' onClick={closeMenu}>Contact Us</Link>
+                        <Link to='/contact' onClick={closeMenu}>Contact US</Link>
                     </li>
                 </ul>
             </nav>

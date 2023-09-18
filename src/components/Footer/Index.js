@@ -9,17 +9,17 @@ function Footer() {
     return (
         <>
             <div className='footercomp'>
-                <div className='aboutcomp'>
+                <div className='aboutcomp1'>
                     <p style={{ fontSize: '18px', color: 'white', fontWeight: 'bold' }}>ABOUT</p>
                     <p style={{ color: 'white', fontFamily: 'Courier New, Courier, monospace', fontSize: '15px' }}>Wedding Reels is an experienced & Best Wedding Photographer in India that is committed to enhancing customer satisfaction. We have a lot of experience in Candid Wedding Photography, Pre Wedding Photography & Indian Wedding Photography.</p>
-                    <div>
+                    <div className='d-flex'>
                         <FaFacebookF style={{ marginRight: '15px', fontSize: '25px' }} />
                         <GrInstagram style={{ marginRight: '15px', fontSize: '25px' }} />
                         <AiFillYoutube style={{ marginRight: '15px', fontSize: '25px' }} />
                     </div>
                 </div>
 
-                <div className='aboutcomp'>
+                <div className='aboutcomp1'>
                     <p style={{ fontSize: '18px', color: 'white', fontWeight: 'bold' }}>PAGES</p>
                     <ul style={{ color: 'white', fontFamily: 'Courier New, Courier, monospace', fontSize: '15px' }}>
                         <li>Home</li>
@@ -31,13 +31,13 @@ function Footer() {
                     </ul>
                 </div>
 
-                <div className='aboutcomp'>
+                <div className='aboutcomp1'>
                     <p style={{ fontSize: '18px', color: 'white', fontWeight: 'bold' }}>ADDRESS</p>
                     <p>Wedding Reels
                         Desk No. 7, C14/165, Sonia Road, Sigra
                         Varanasi, Uttar Pradesh</p>
-                    <p><MdCall style={{ marginRight: '10px' }} />+91 11111 00000</p>
-                    <p><MdOutlineMail style={{ marginRight: '10px' }} />abc@weddingreels.in</p>
+                    <p className='d-flex'><MdCall style={{ marginRight: '10px' }} />+91 11111 00000</p>
+                    <p className='d-flex'><MdOutlineMail style={{ marginRight: '10px' }} />abc@weddingreels.in</p>
                 </div>
             </div>
         </>

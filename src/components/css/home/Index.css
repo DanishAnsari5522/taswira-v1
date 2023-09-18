@@ -1,5 +1,5 @@
-.HomeComp{
-background-color: #1a1a1a;
+.HomeComp {
+    background-color: #1a1a1a;
 }
 
 .whatwedocomp {
@@ -29,7 +29,7 @@ background-color: #1a1a1a;
     height: 100%;
 }
 
-.getQuote{
+.getQuote {
     border: 1px solid gold;
     padding: 10px 20px;
     border-radius: 8px;
@@ -38,7 +38,7 @@ background-color: #1a1a1a;
     margin-top: 20px;
 }
 
-.getQuote:hover{
+.getQuote:hover {
     background-color: gold;
     color: black;
 }
@@ -54,7 +54,8 @@ background-color: #1a1a1a;
     align-items: center;
     justify-content: center;
 }
-.getQuote1{
+
+.getQuote1 {
     border: 1px solid gold;
     padding: 10px 20px;
     border-radius: 5px;
@@ -62,13 +63,16 @@ background-color: #1a1a1a;
     margin-top: 20px;
 }
 
-.getQuote1:hover{
+.getQuote1:hover {
     background-color: gold;
     color: black;
 }
 
 @media screen and (max-width:500px) {
-   
+    .HomeComp {
+        margin-top: 90px;
+    }
+
 
     .whatwedocomp {
         display: inline-block;
@@ -84,5 +88,5 @@ background-color: #1a1a1a;
         background-color: black;
         width: 100%;
         padding: 40px;
-    }    
+    }
 }

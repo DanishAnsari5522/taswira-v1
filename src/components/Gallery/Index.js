@@ -1,7 +1,8 @@
 import React from 'react';
 import PhotoGallery from './PhotoGallery/Index';
 import WSPGallery from './PhotoGallery/Test';
-import '../../components/css/gallery/Index.css'
+import '../../components/css/gallery/Index.css';
+import VideoGallery from './VideoGallery/Index';
 
 export default function Gallery() {
 
@@ -17,6 +18,7 @@ export default function Gallery() {
                 </div>
             </div>
             <WSPGallery />
+            <VideoGallery />
         </>
     )
 }

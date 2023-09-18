@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
 import Carousel from "react-elastic-carousel";
 import Item from "./Item";
-import { Alarm, Play } from '@phosphor-icons/react';
-import '../../components/css/carosal/FinalCarosal.css'
+import { Alarm } from '@phosphor-icons/react';
+import '../../css/carosal/FinalCarosal.css';
 
 const breakPoints = [
     { width: 1, itemsToShow: 1 },
@@ -39,28 +38,31 @@ const data = [
     }
 ]
 
-export default function FinalCarosal() {
+export default function ViewMoreCarosal() {
     const [items, setItems] = useState([0, 1, 2, 3, 4, 5, 6, 7]);
 
     return (
         <>
-            <div className="App">
+            <div className="CarosalComp">
+                <div className="CarosalInnerComp">
+                    <p style={{ color: 'gold',marginBottom:10 }}>TRADITIONAL PHOTOGRAPHY</p>
+                    <p style={{ color: 'white' }}>Traditional Photography is similar to what many couples’ parents have from their weddings.
+                        These straightforward photographs may not be highly creative—they’re typically shot at
+                        eye level and posed—but they stand the test of time. Most photographers incorporate at
+                        least some traditional photography into their mix, particularly for family portraits after the ceremony.
+                    </p>
+                </div>
                 <Carousel breakPoints={breakPoints}>
                     {
                         data.map((val) => {
                             return (
                                 <>
                                     <Item style={{ fontSize: 12, backgroundColor: 'black' }} className="carosalCardComp">
-                                        {/* <div style={{ display: 'flex', alignItems: "center", justifyContent: 'center', marginBottom: 10 }}><Alarm size={32} color='gold' /></div>
-                                        <p style={{ fontSize: 22 }}>{val.name}</p>
-                                        <p style={{ fontSize: 14,paddingLeft:15,paddingRight:15 }}>{val.disc}</p>
-                                        <p style={{ marginTop: 30 }}>Read More</p> */}
                                         <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
                                             <div className="carosalCardinnerComp">
                                                 <div style={{ display: 'flex', alignItems: "center", justifyContent: 'center', marginBottom: 10 }}><Alarm size={32} color='gold' /></div>
                                                 <p style={{ fontSize: 22 }}>{val.name}</p>
                                                 <p style={{ fontSize: 14, paddingLeft: 15, paddingRight: 15 }}>{val.disc}</p>
-                                                {/* <p style={{ marginTop: 30 }}>Read More</p> */}
                                             </div>
                                             <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
                                             <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
