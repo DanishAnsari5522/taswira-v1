@@ -24,20 +24,16 @@ function Footer() {
                     <ul style={{ color: 'white', fontFamily: 'Courier New, Courier, monospace', fontSize: '15px' }}>
                         <li>Home</li>
                         <li>About us</li>
-                        <li>Packages</li>
-                        <li>Privacy & Policy</li>
-                        <li>Terms & Conditions</li>
+                        <li>Gallery</li>
                         <li>Contact us</li>
                     </ul>
                 </div>
 
                 <div className='aboutcomp1'>
                     <p style={{ fontSize: '18px', color: 'white', fontWeight: 'bold' }}>ADDRESS</p>
-                    <p>Wedding Reels
-                        Desk No. 7, C14/165, Sonia Road, Sigra
-                        Varanasi, Uttar Pradesh</p>
-                    <p className='d-flex'><MdCall style={{ marginRight: '10px' }} />+91 11111 00000</p>
-                    <p className='d-flex'><MdOutlineMail style={{ marginRight: '10px' }} />abc@weddingreels.in</p>
+                    <p>P.20/44 -47 A , Vijay Nagaram Colony , Bhelupur</p>
+                    <p className='d-flex'><MdCall style={{ marginRight: '10px' }} />+91 7355661108,9616022575</p>
+                    <p className='d-flex'><MdOutlineMail style={{ marginRight: '10px' }} />taswira32@gmail.com</p>
                 </div>
             </div>
         </>
