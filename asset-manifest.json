@@ -1,21 +1,17 @@
 {
   "files": {
-    "main.css": "/taswira-v1/static/css/main.7ff079e0.css",
-    "main.js": "/taswira-v1/static/js/main.f210f710.js",
+    "main.css": "/taswira-v1/static/css/main.3f21bbc4.css",
+    "main.js": "/taswira-v1/static/js/main.8ea6638f.js",
     "static/media/back9.jpg": "/taswira-v1/static/media/back9.37c8ed53b93891b6aae5.jpg",
     "static/media/back.jpg": "/taswira-v1/static/media/back.2dce0da296f25898b04f.jpg",
-    "static/media/taswiraimg.png": "/taswira-v1/static/media/taswiraimg.2d13c565dcde130733ca.png",
     "static/media/wed1.jpg": "/taswira-v1/static/media/wed1.dfb206f4f254823a3f5b.jpg",
-    "static/media/back2.jpg": "/taswira-v1/static/media/back2.c7a71ee68a153224cf3b.jpg",
-    "static/media/flip3.jpg": "/taswira-v1/static/media/flip3.e68af91bc0e46262f358.jpg",
-    "static/media/flip2.jpg": "/taswira-v1/static/media/flip2.ff34afe2020825a4eb7b.jpg",
     "static/media/main1.png": "/taswira-v1/static/media/main1.c95367b52e8de9af8d9d.png",
     "index.html": "/taswira-v1/index.html",
-    "main.7ff079e0.css.map": "/taswira-v1/static/css/main.7ff079e0.css.map",
-    "main.f210f710.js.map": "/taswira-v1/static/js/main.f210f710.js.map"
+    "main.3f21bbc4.css.map": "/taswira-v1/static/css/main.3f21bbc4.css.map",
+    "main.8ea6638f.js.map": "/taswira-v1/static/js/main.8ea6638f.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ff079e0.css",
-    "static/js/main.f210f710.js"
+    "static/css/main.3f21bbc4.css",
+    "static/js/main.8ea6638f.js"
   ]
 }
