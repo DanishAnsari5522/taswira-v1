@@ -11,6 +11,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 import Footer from './components/Footer/Index';
 import ViewMore from './components/Home/ViewMore/Index';
 
+
 function App() {
   const auth = localStorage.getItem('token');
   const send = () => {
