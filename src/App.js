@@ -7,12 +7,23 @@ import Home from './components/Home/Index';
 import About from './components/About/Index';
 import Contact from './components/Contact/Index';
 import Gallery from './components/Gallery/Index';
-import { FaFacebookF } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa';
 import Footer from './components/Footer/Index';
 import ViewMore from './components/Home/ViewMore/Index';
 
 function App() {
   const auth = localStorage.getItem('token');
+  const send = () => {
+    
+    // console.log("danish ansari" + count+"caetogr"+category);
+    // setPrice(count)
+
+   
+    let url="https://wa.me/7355661108?text="
+    +`I m interested`
+  
+    window.open(url,'_blank').focus();
+}
   return (
     <div className="App">
       <BrowserRouter>
@@ -25,8 +36,8 @@ function App() {
         <Route path="/detail" exact><ViewMore /></Route>
 
         <div className='hii'>
-          <div className='contactIcon' onClick={() => { alert("hii") }}>
-            <FaFacebookF style={{ fontSize: '25px' }} />
+          <div className='contactIcon' onClick={() => { send() }}>
+            <FaWhatsapp style={{ fontSize: '25px' }} />
           </div>
         </div>
         <Footer />

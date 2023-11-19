@@ -14,7 +14,7 @@ export default function Home() {
                 <CarouselAlice />
                 <div className='whatwedocomp'>
                     <div className='whatwedoimg'>
-                        <img src="https://www.weddingreels.in/wp-content/uploads/2022/01/pre-wedding1.jpg" className='whatweimg' />
+                        <img src="https://img.freepik.com/premium-photo/bride-groom-hand-together-indian-wedding_14349-57.jpg?w=900" className='whatweimg' />
                     </div>
                     <div className='whatwedo'>
                         <p style={{ fontSize: 30, color: 'rgb(164, 116, 25)' }}>Hire us as your Wedding Photographer</p>
@@ -24,6 +24,7 @@ export default function Home() {
                             Again there is a bittersweet pain in the heart of the bride,
                             for thinking of leaving her childhood home behind.
                         </p>
+                        <br></br>
                         <span className="getQuote">Get Quote</span>
                     </div>
                 </div>
@@ -35,7 +36,7 @@ export default function Home() {
                     <div>
                         <p style={{ color: 'white', textAlign: 'center', alignItems: 'center', fontSize: 32 }}>Get Amazing Offers for your Wedding</p>
                         <p className='beit'>The spontaneous candid photography of the couple and the dear ones, or the cinematic angles of the rituals, or the classic family photograph.</p>
-                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '20px' }}><span className="getQuote1" >Get Quote</span></div>
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '20px' }}><br></br><span className="getQuote1" >Get Quote</span></div>
                     </div>
                 </div>
             </div>

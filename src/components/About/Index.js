@@ -16,7 +16,7 @@ export default function About() {
                 </div>
                 <div className='whatwedocomp'>
                     <div className='whatwedoimg'>
-                        <img src="https://www.weddingreels.in/wp-content/uploads/2022/01/pre-wedding1.jpg" className='whatweimg' />
+                        <img src="https://img.freepik.com/free-photo/hands-indian-bride-groom-intertwined-together-making-authentic-wedding-ritual_8353-10047.jpg?w=900&t=st=1700143639~exp=1700144239~hmac=bee75756a22fc80380694421ce358f3de1c9820517941a499532ebeae3ed166a" className='whatweimg' />
                     </div>
                     <div className='whatwedo'>
                         <p style={{ fontSize: 30, color: 'rgb(164, 116, 25)' }}>Hire us as your Wedding Photographer</p>

@@ -37,6 +37,7 @@ export default function VideoGallery() {
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowFullScreen
                                         title="Embedded youtube"
+                                        autoplay
                                     />
                                     {/* </Card.Body> */}
                                 </Card>

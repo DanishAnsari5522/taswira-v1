@@ -27,6 +27,7 @@ function ViewMore({ props }) {
                         Again there is a bittersweet pain in the heart of the bride,
                         for thinking of leaving her childhood home behind.
                     </p>
+                    <br></br>
                     <span className="getQuote">Get Quote</span>
                 </div>
             </div>

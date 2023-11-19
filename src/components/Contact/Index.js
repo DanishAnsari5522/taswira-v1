@@ -9,10 +9,10 @@ export default function Contact() {
             <div className='ContactComp'>
                 <div>
                     <p>NEED HELP</p>
-                    <p style={{ fontSize: 32, fontWeight: '600' }}>Contact Us</p>
-                    <p>Address</p>
-                    <p>Email:<span style={{ color: 'red' }}>abc@gmail.com</span></p>
-                    <p>Phone:<span style={{ color: 'red' }}>0000000000,1111111111</span></p>
+                    <p style={{ fontSize: 62, fontWeight: '700' }}>Contact Us</p>
+                    <p>Address:-  <span>P.20/44 -47 A , Vijay Nagaram Colony , Bhelupur</span></p>
+                    <p>Email: <span style={{ color: 'white' }}> taswira32@gmail.com </span></p>
+                    <p>Phone: <span style={{ color: 'white' }}> 7355661108,9616022575 </span></p>
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                         <FaFacebookF style={{ fontSize: '40px', backgroundColor: 'blue', padding: 10, borderRadius: 100, margin: 3 }} />
                         <AiOutlineInstagram style={{ fontSize: '40px', backgroundColor: 'red', padding: 10, borderRadius: 100, margin: 3 }} />
