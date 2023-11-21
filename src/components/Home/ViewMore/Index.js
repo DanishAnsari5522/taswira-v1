@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../css/home/viewMore/Index.css';
-import FinalCarosal from '../../Carosal/FinalCarosal';
 import ViewMoreCarosal from './Carosal';
 
 function ViewMore({ props }) {

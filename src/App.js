@@ -13,15 +13,9 @@ import ViewMore from './components/Home/ViewMore/Index';
 
 
 function App() {
-  const auth = localStorage.getItem('token');
   const send = () => {
-    
-    // console.log("danish ansari" + count+"caetogr"+category);
-    // setPrice(count)
-
-   
     let url="https://wa.me/7355661108?text="
-    +`I m interested`
+    +`I'm interested`
   
     window.open(url,'_blank').focus();
 }

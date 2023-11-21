@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
 import Carousel from "react-elastic-carousel";
 import Item from "./Item";
-import { Alarm, Play } from '@phosphor-icons/react';
+import { Alarm } from '@phosphor-icons/react';
 import '../../components/css/carosal/FinalCarosal.css'
 
 const breakPoints = [
@@ -40,7 +39,7 @@ const data = [
 ]
 
 export default function FinalCarosal() {
-    const [items, setItems] = useState([0, 1, 2, 3, 4, 5, 6, 7]);
+    // const [items, setItems] = useState([0, 1, 2, 3, 4, 5, 6, 7]);
 
     return (
         <>

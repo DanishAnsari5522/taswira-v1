@@ -41,7 +41,7 @@
 
 
 import React from "react";
-import { Media, photos } from './photos';
+import { Media } from './photos';
 
 export default function PhotoGallery() {
     return (
