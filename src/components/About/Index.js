@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../components/css/About/Index.css';
 import CarouselAlice from '../Carosal/AliseCarosal';
+import { Link } from 'react-router-dom'
 
 export default function About() {
     return (
@@ -16,7 +17,7 @@ export default function About() {
                 </div>
                 <div className='whatwedocomp'>
                     <div className='whatwedoimg'>
-                        <img src="https://img.freepik.com/free-photo/hands-indian-bride-groom-intertwined-together-making-authentic-wedding-ritual_8353-10047.jpg?w=900&t=st=1700143639~exp=1700144239~hmac=bee75756a22fc80380694421ce358f3de1c9820517941a499532ebeae3ed166a" className='whatweimg' alt='image'/>
+                        <img src="https://img.freepik.com/free-photo/hands-indian-bride-groom-intertwined-together-making-authentic-wedding-ritual_8353-10047.jpg?w=900&t=st=1700143639~exp=1700144239~hmac=bee75756a22fc80380694421ce358f3de1c9820517941a499532ebeae3ed166a" className='whatweimg' alt='image' />
                     </div>
                     <div className='whatwedo'>
                         <p style={{ fontSize: 30, color: 'rgb(164, 116, 25)' }}>Hire us as your Wedding Photographer</p>
@@ -26,7 +27,9 @@ export default function About() {
                             Again there is a bittersweet pain in the heart of the bride,
                             for thinking of leaving her childhood home behind.
                         </p>
-                        <span className="getQuote">Get Quote</span>
+                        <Link to='/contact'>
+                            <span className="getQuote">Get Quote</span>
+                        </Link>
                     </div>
                 </div>
                 <CarouselAlice />

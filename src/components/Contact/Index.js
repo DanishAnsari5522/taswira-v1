@@ -17,14 +17,14 @@ export default function Contact() {
 
 
 
-                        <a href='https://www.facebook.com/taswira32?mibextid=LQQJ4d'>
+                        <a href='https://www.facebook.com/taswira32?mibextid=LQQJ4d' target='_blank'>
                             <FaFacebookF style={{ fontSize: '40px', backgroundColor: 'blue', padding: 10, borderRadius: 100, margin: 3 }} />
                         </a>
 
-                        <a href='https://www.instagram.com/taswira._/'>
+                        <a href='https://www.instagram.com/taswira._/' target='_blank'>
                             <AiOutlineInstagram style={{ fontSize: '40px', backgroundColor: 'gray', padding: 10, borderRadius: 100, margin: 3 }} />
                         </a>
-                        <a href='https://www.youtube.com/@taswira32'>
+                        <a href='https://www.youtube.com/@taswira32' target='_blank'>
                             <AiOutlineYoutube style={{ fontSize: '40px', backgroundColor: 'red', padding: 10, borderRadius: 100, margin: 3 }} />
                         </a>
                     </div>
