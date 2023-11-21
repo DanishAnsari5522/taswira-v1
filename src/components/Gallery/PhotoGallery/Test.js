@@ -35,11 +35,11 @@ const WSPGallery = () => {
     }
 
     return (
-        <div>
+        <div className='WSPGalleryCon'>
 
             {openModal &&
                 <div className='sliderWrap'>
-                    <RxCross1 className='btnClose' color='white' onClick={handleCloseModal} />
+                    <RxCross1 className='btnClose' color='red' onClick={handleCloseModal} />
                     <AiOutlineLeft className='btnPrev' onClick={prevSlide} />
                     <AiOutlineRight className='btnNext' onClick={nextSlide} />
                     <div className='fullScreenImage'>

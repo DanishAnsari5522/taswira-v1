@@ -1,9 +1,9 @@
-.forBg{
+.forBg {
     padding-bottom: 50px;
     background-color: #1a1a1a;
 }
 
-.forCon{
+.forCon {
     /* margin-bottom: 0px; */
     height: 50vh;
     display: flex;
@@ -53,11 +53,14 @@
     height: 100%;
 }
 
+
 .btnClose {
-    font-size: 30px;
+    font-size: 50px;
     color: white;
-    z-index: 100000;
     font-weight: bold;
+    /* background-color: red; */
+    /* border-radius: 50%; */
+    /* padding: 10px; */
 }
 
 .sliderWrap .btnClose,
