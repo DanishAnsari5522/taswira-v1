@@ -1,11 +1,9 @@
 import React from 'react';
 import '../../components/css/home/VideoGallery.css';
-import ReactCarousel from '../Carosal/Test';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import FinalCarosal from '../Carosal/FinalCarosal';
-import CardFlip from '../Package/CardFlip';
+import { videos } from '../Gallery/VideoGallery/Video';
 
 const data = [
     'https://youtu.be/l3aKPVx_EK0',
@@ -24,32 +22,23 @@ export default function VideoGallery() {
                 </div>
                 <div className='VideoList'>
                     <Row xs={1} md={3} className="g-4 bg-red">
-                        {Array.from({ length: 3 }).map((_, idx) => (
-                            <Col key={idx}>
+                        {videos.slice(0, 3).map((slide, index) => (
+                            <Col key={index}>
                                 <Card>
-                                    {/* <Card.Body> */}
-                                    {/* <Card.Title>Card title {idx}</Card.Title> */}
-                                    <iframe
-                                        width="100%"
-                                        height="180"
-                                        src={`https://www.youtube.com/embed/${data[idx]}`}
-                                        frameBorder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen
-                                        title="Embedded youtube"
-                                        autoplay
+                                    <iframe src={slide.src}
+                                        frameborder='0'
+                                        allow='autoplay; encrypted-media'
+                                        title='video'
+                                        // onClick={() => handleOpenModal(index)}
+                                        className='video h-[15rem]'
+                                        controls aria-disabled
                                     />
-                                    {/* </Card.Body> */}
                                 </Card>
                             </Col>
                         ))}
                     </Row>
 
                 </div>
-                {/* <ReactCarousel /> */}
-                {/* <FinalCarosal /> */}
-                {/* IMP */}
-                {/* <CardFlip /> */}
             </div>
         </>
     )

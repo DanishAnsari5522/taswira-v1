@@ -5,6 +5,7 @@ import '../../components/css/home/Index.css';
 import VideoGallery from "./VideoGallery";
 import Status from "./Status";
 import PhotographyPackage from "./PhotographyPackage";
+import { Link } from 'react-router-dom'
 
 export default function Home() {
     return (
@@ -25,7 +26,10 @@ export default function Home() {
                             for thinking of leaving her childhood home behind.
                         </p>
                         <br></br>
-                        <span className="getQuote">Get Quote</span>
+                        <Link to='/contact'>
+                            <span className="getQuote">Get Quote</span>
+                        </Link>
+
                     </div>
                 </div>
                 <Status />
@@ -36,7 +40,11 @@ export default function Home() {
                     <div>
                         <p style={{ color: 'white', textAlign: 'center', alignItems: 'center', fontSize: 32 }}>Get Amazing Offers for your Wedding</p>
                         <p className='beit'>The spontaneous candid photography of the couple and the dear ones, or the cinematic angles of the rituals, or the classic family photograph.</p>
-                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '20px' }}><br></br><span className="getQuote1" >Get Quote</span></div>
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '50px' }}><br></br>
+                            <Link to='/contact'>
+                                <span className="getQuote">Get Quote</span>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
