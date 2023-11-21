@@ -32,7 +32,7 @@ function App() {
 
         <div className='hii'>
           <div className='contactIcon' onClick={() => { send() }}>
-            <FaWhatsapp style={{ fontSize: '25px' }} />
+            <FaWhatsapp style={{ fontSize: '30px' }} />
           </div>
         </div>
         <Footer />
