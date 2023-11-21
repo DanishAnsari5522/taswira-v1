@@ -2,7 +2,7 @@
   "name": "taswira",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://DanishAnsari5522.github.io/taswira-v1",
+  "homepage": "https://DanishAnsari5522.github.io",
   "dependencies": {
     "@heroicons/react": "^2.0.18",
     "@material-tailwind/react": "^2.1.0",
