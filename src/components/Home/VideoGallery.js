@@ -20,7 +20,7 @@ export default function VideoGallery() {
                 <div className='videogallery'>
                     <p style={{ color: 'gold' }}>VIDEO GALLERY</p>
                     <h2 style={{ fontSize: 40, color: 'white', fontWeight: 'bold' }}>Wedding Videoshoot</h2>
-                    <p style={{ color: 'white' }}>Here's an exhibition of some beautiful and eye-catching wedding shots our team clicked for our clients.</p>
+                    <p style={{ color: 'white' }}>Presenting a stunning showcase of captivating wedding captures crafted by our dedicated team for our valued clients.</p>
                 </div>
                 <div className='VideoList'>
                     <Row xs={1} md={3} className="g-4 bg-red">

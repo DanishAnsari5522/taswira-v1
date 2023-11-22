@@ -14,19 +14,19 @@ const breakPoints = [
 const data = [
     {
         name: "Traditional photography",
-        disc: "Wanna have those perfect family photographs shot for that huge wall frame in your living room? We got you!"
+        disc: "Seeking impeccable family portraits for your grand living room display? Look no further, we've got you covered!"
     },
     {
         name: "Candid photography",
-        disc: "We know how varying can emotions and expressions be in marriages. We capture exactly the same with this!"
+        disc: "We understand the spectrum of emotions and expressions that unfold during weddings. Our expertise lies in capturing these moments authentically."
     },
     {
         name: "Pre-wedding shoots",
-        disc: "How about the filmy and fantasy-like shots that you have been dreaming of for the longest of time?"
+        disc: "What about those dreamy, cinematic shots you've longed for? We'll make your fantasies come to life through our photography."
     },
     {
         name: "Bridal portraits",
-        disc: "Oh, how angelic does the bride look in her special attire! And we love capturing this from different angles!"
+        disc: "Isn't the bride a vision in her special attire? We adore capturing this beauty from unique perspectives"
     },
     {
         name: "Aerial/Drone photography",
@@ -46,10 +46,8 @@ export default function ViewMoreCarosal() {
             <div className="CarosalComp">
                 <div className="CarosalInnerComp">
                     <p style={{ color: 'gold',marginBottom:10 }}>TRADITIONAL PHOTOGRAPHY</p>
-                    <p style={{ color: 'white' }}>Traditional Photography is similar to what many couples’ parents have from their weddings.
-                        These straightforward photographs may not be highly creative—they’re typically shot at
-                        eye level and posed—but they stand the test of time. Most photographers incorporate at
-                        least some traditional photography into their mix, particularly for family portraits after the ceremony.
+                    <p style={{ color: 'white' }}>
+Traditional Photography, reminiscent of the cherished images from our parents' weddings, embodies simplicity. While these photos are often posed and captured at eye level without extravagant creativity, they hold timeless value. Most photographers include some traditional shots, especially for capturing family portraits post-ceremony, honoring the classic essence of wedding documentation.
                     </p>
                 </div>
                 <Carousel breakPoints={breakPoints}>

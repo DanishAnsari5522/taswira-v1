@@ -51,8 +51,8 @@ const VideoGallery = () => {
                     <div>
                         <p style={{ color: 'white', textAlign: 'center', alignItems: 'center', fontSize: 17 }}>GALLERY US</p>
                         <p style={{ color: 'white', textAlign: 'center', alignItems: 'center', fontSize: 32 }}>Wedding Video Gallery</p>
-                        <p className='beit'>The prolific and passionate lenses in our team have gotten us some real gems into our kitty.
-                            Explore our gallery of pic perfect Videography.</p>
+                        <p className='beit'>Taswira and passionate lenses have captured remarkable gems for our collection.
+                    Discover our gallery showcasing picture-perfect photography.</p>
                     </div>
                 </div>
 

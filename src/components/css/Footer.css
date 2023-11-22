@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap');
 .footercomp {
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
     background-color: rgb(44, 43, 43);
-    padding: 20px 40px;
+    padding: 60px 80px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .aboutcomp1 {
     width: 30%;
     color: white;
     font-size: 15px;
-    font-family: 'Courier New', Courier, monospace;
+
+    /* font-family: 'Courier New', Courier, monospace; */
     /* font-family: 'Courier New', Courier, monospace; */
 }
 

@@ -6,8 +6,8 @@ export default function PhotographyPackage() {
     return (
         <>
             <div className='PhotographyPackageComp'>
-                <p style={{color:'white',textAlign:'center',fontSize:32}}>All Kinds of Wedding Photography Package</p>
-                <p className='beit'>Be it a Candid series, or the filmy cinematic shots, or a classic style photograph for your special frame. We offer services of every regional and style of Photography!</p>
+                <p style={{color:'white',textAlign:'center',fontSize:32}}>A diverse range of wedding photography packages available.</p>
+                <p className='beit'>Whether it's candid sequences, cinematic shots, or timeless classic photographs for your cherished moments, we provide photography services encompassing every regional and stylistic preference!</p>
                 <CardFlip />
             </div>
         </>
