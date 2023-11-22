@@ -39,8 +39,6 @@ const data = [
 ]
 
 export default function FinalCarosal() {
-    // const [items, setItems] = useState([0, 1, 2, 3, 4, 5, 6, 7]);
-
     return (
         <>
             <div className="App">
@@ -50,20 +48,11 @@ export default function FinalCarosal() {
                             return (
                                 <>
                                     <Item style={{ fontSize: 12, backgroundColor: 'black' }} className="carosalCardComp">
-                                        {/* <div style={{ display: 'flex', alignItems: "center", justifyContent: 'center', marginBottom: 10 }}><Alarm size={32} color='gold' /></div>
-                                        <p style={{ fontSize: 22 }}>{val.name}</p>
-                                        <p style={{ fontSize: 14,paddingLeft:15,paddingRight:15 }}>{val.disc}</p>
-                                        <p style={{ marginTop: 30 }}>Read More</p> */}
-                                        <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                                        <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl">
                                             <div className="carosalCardinnerComp">
                                                 <div style={{ display: 'flex', alignItems: "center", justifyContent: 'center', marginBottom: 10 }}><Alarm size={32} color='gold' /></div>
                                                 <p style={{ fontSize: 22 }}>{val.name}</p>
                                                 <p style={{ fontSize: 14, paddingLeft: 15, paddingRight: 15 }}>{val.disc}</p>
-                                                {/* <p style={{ marginTop: 30 }}>Read More</p> */}
-                                            </div>
-                                            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-                                            <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                                                <button class="rounded-full text-gold-400 bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60" onClick={() => { alert(val.name) }}>Read More</button>
                                             </div>
                                         </div>
                                     </Item>

@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa'
-import logo from '../../src/assets/main1.png';
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import logo from '../../src/assets/svglogo.svg';
+import { Link } from 'react-router-dom';
 
 import './Navbar.css'
 

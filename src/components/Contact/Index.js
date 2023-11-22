@@ -14,9 +14,19 @@ export default function Contact() {
                     <p>Email: <span style={{ color: 'white' }}> taswira32@gmail.com </span></p>
                     <p>Phone: <span style={{ color: 'white' }}> 7355661108,9616022575 </span></p>
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <FaFacebookF style={{ fontSize: '40px', backgroundColor: 'blue', padding: 10, borderRadius: 100, margin: 3 }} />
-                        <AiOutlineInstagram style={{ fontSize: '40px', backgroundColor: 'red', padding: 10, borderRadius: 100, margin: 3 }} />
-                        <AiOutlineYoutube style={{ fontSize: '40px', backgroundColor: 'gray', padding: 10, borderRadius: 100, margin: 3 }} />
+
+
+
+                        <a href='https://www.facebook.com/taswira32?mibextid=LQQJ4d' target='_blank'>
+                            <FaFacebookF style={{ fontSize: '40px', backgroundColor: 'blue', padding: 10, borderRadius: 100, margin: 3 }} />
+                        </a>
+
+                        <a href='https://www.instagram.com/taswira._/' target='_blank'>
+                            <AiOutlineInstagram style={{ fontSize: '40px', backgroundColor: 'gray', padding: 10, borderRadius: 100, margin: 3 }} />
+                        </a>
+                        <a href='https://www.youtube.com/@taswira32' target='_blank'>
+                            <AiOutlineYoutube style={{ fontSize: '40px', backgroundColor: 'red', padding: 10, borderRadius: 100, margin: 3 }} />
+                        </a>
                     </div>
                 </div>
             </div>

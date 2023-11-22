@@ -5,6 +5,7 @@ import '../../components/css/home/Index.css';
 import VideoGallery from "./VideoGallery";
 import Status from "./Status";
 import PhotographyPackage from "./PhotographyPackage";
+import { Link } from 'react-router-dom'
 
 export default function Home() {
     return (
@@ -22,7 +23,10 @@ export default function Home() {
                         Weddings mark the inception of a new journey, a miniature universe brimming with emotions. It's a blend of joy for the couple's new beginning and a touch of nostalgia for the bride bidding adieu to her childhood sanctuary.
                         </p>
                         <br></br>
-                        <span className="getQuote">Get Quote</span>
+                        <Link to='/contact'>
+                            <span className="getQuote">Get Quote</span>
+                        </Link>
+
                     </div>
                 </div>
                 <Status />

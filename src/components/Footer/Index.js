@@ -13,7 +13,10 @@ function Footer() {
                     <p style={{ fontSize: '18px', color: 'white', fontWeight: 'bold' }}>ABOUT</p>
                     <p style={{ color: 'white', fontFamily: 'Times New Roman, monospace', fontSize: '15px' }}>Taswira  is an experienced & Best Wedding Photographer in India that is committed to enhancing customer satisfaction. We have a lot of experience in Candid Wedding Photography, Pre Wedding Photography & Indian Wedding Photography.</p><br></br>
                     <div className='d-flex'>
-                        <FaFacebookF style={{ marginRight: '15px', fontSize: '25px' }} />
+                        <button></button>
+                        <a href='https://www.instagram.com/taswira._/'>
+                            <FaFacebookF style={{ marginRight: '15px', fontSize: '25px' }} />
+                        </a>
                         <GrInstagram style={{ marginRight: '15px', fontSize: '25px' }} />
                         <AiFillYoutube style={{ marginRight: '15px', fontSize: '25px' }} />
                     </div>
