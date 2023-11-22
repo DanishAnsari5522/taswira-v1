@@ -11,7 +11,7 @@ export default function Status() {
         <>
             <div className='StatusComp'>
                 <p style={{ textAlign: 'center', color: 'white', paddingTop: '20px' }}>Photo Section</p>
-                <div className='VideoList'>
+                <div className='photoList'>
                     <Row xs={1} md={3} className="g-4 bg-red">
                         {photos.slice(0, 5).map((file, ind) => (
                             <Col key={ind}>

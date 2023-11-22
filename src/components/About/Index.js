@@ -12,7 +12,7 @@ export default function About() {
                         <p style={{ color: 'white', textAlign: 'center', alignItems: 'center', fontSize: 17 }}>ABOUT US</p>
                         <p style={{ color: 'white', textAlign: 'center', alignItems: 'center', fontSize: 32 }}>We specialize in capturing magnificent wedding moments</p>
                         <p className='beit'>
-Taswira stands as a seasoned and premier Wedding Photographer in India dedicated to elevating customer delight. With extensive expertise in Candid, Pre-Wedding, and Indian Wedding Photography, we bring a wealth of experience to capture your special moments.</p>
+                            Taswira stands as a seasoned and premier Wedding Photographer in India dedicated to elevating customer delight. With extensive expertise in Candid, Pre-Wedding, and Indian Wedding Photography, we bring a wealth of experience to capture your special moments.</p>
                     </div>
                 </div>
                 <div className='whatwedocomp'>
@@ -22,11 +22,11 @@ Taswira stands as a seasoned and premier Wedding Photographer in India dedicated
                     <div className='whatwedo'>
                         <p style={{ fontSize: 30, color: 'rgb(164, 116, 25)' }}>Hire us as your Wedding Photographer</p>
 
-                        <p style={{ color: 'white', fontFamily: 'Times New Roman, monospace', fontSize: '16px', marginBottom: '10px' }}>
-                        The day swirls with a myriad of emotions among all involved. The couple exudes equal joy, embarking on their new life together. Yet, the bride's heart holds a bittersweet ache, contemplating the farewell to her cherished childhood home
+                        <p style={{ color: 'white', fontFamily: 'Times New Roman, monospace', fontSize: '18px', marginBottom: '10px' }}>
+                            The day swirls with a myriad of emotions among all involved. The couple exudes equal joy, embarking on their new life together. Yet, the bride's heart holds a bittersweet ache, contemplating the farewell to her cherished childhood home
                         </p><br></br>
-                
-                    
+
+
                         <Link to='/contact'>
                             <span className="getQuote">Get Quote</span>
                         </Link>
